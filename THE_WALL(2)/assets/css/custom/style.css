@@ -1,0 +1,617 @@
+@font-face {
+  font-family: roboto_regular;
+  src: url("../../fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: roboto_italic;
+  src: url("../../fonts/Roboto-Italic.ttf");
+}
+@media screen {
+  font-family: roboto_bold;
+  src: url("../../fonts/Roboto-Bold.ttf");
+}
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: roboto_regular;
+  color: #6d7186;
+}
+body {
+  background-color: #2c2d34;
+}
+body #wrapper .hide {
+  display: none;
+}
+body #wrapper .signup_signin_container {
+  background-color: #3B3C43;
+  border-radius: 10px;
+  font-size: 0px;
+  margin: 0px auto;
+  margin-top: 220px;
+  max-width: 876px;
+  overflow: hidden;
+}
+body #wrapper .signup_signin_container.hide {
+  display: none;
+}
+body #wrapper .signup_signin_container #signup_form,
+body #wrapper .signup_signin_container #signin_form {
+  background-color: #1D1F2B;
+  display: inline-block;
+  width: 671px;
+  padding: 75px 78px;
+  vertical-align: top;
+}
+body #wrapper .signup_signin_container #signup_form h2,
+body #wrapper .signup_signin_container #signin_form h2 {
+  color: #ffffff;
+  font: 21px/16px roboto_regular, sans-serif;
+  padding: 0px 0px 7px 75px;
+  position: relative;
+}
+body #wrapper .signup_signin_container #signup_form h2::after,
+body #wrapper .signup_signin_container #signin_form h2::after {
+  background-image: url("../../img/the-wall-logo-grey.png");
+  content: "";
+  display: inline-block;
+  height: 46px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 46px;
+}
+body #wrapper .signup_signin_container #signup_form h3,
+body #wrapper .signup_signin_container #signin_form h3 {
+  color: #6d7186;
+  font: 17.5108px/21px roboto_regular, sans-serif;
+  padding-left: 75px;
+}
+body #wrapper .signup_signin_container #signup_form .signup_fields,
+body #wrapper .signup_signin_container #signin_form .signup_fields {
+  margin-top: 52px;
+}
+body #wrapper .signup_signin_container #signup_form .signup_fields .input_container,
+body #wrapper .signup_signin_container #signin_form .signup_fields .input_container {
+  width: 250px;
+  display: inline-block;
+  vertical-align: top;
+}
+body #wrapper .signup_signin_container #signup_form .signup_fields .input_container:nth-child(1),
+body #wrapper .signup_signin_container #signin_form .signup_fields .input_container:nth-child(1) {
+  margin-right: 11px;
+}
+body #wrapper .signup_signin_container #signup_form .signup_fields .input_container label,
+body #wrapper .signup_signin_container #signin_form .signup_fields .input_container label {
+  font-size: 14px;
+}
+body #wrapper .signup_signin_container #signup_form .signup_fields .input_container input,
+body #wrapper .signup_signin_container #signin_form .signup_fields .input_container input {
+  background-color: #31354f;
+  font: 16px roboto_regular;
+  color: #ffffff;
+  padding: 25px 20px 22px 20px;
+  border-radius: 9px;
+  border: none;
+  margin: 8px 0px 17px 0px;
+  width: 250px;
+  box-sizing: border-box;
+}
+body #wrapper .signup_signin_container #signup_form .signup_fields .input_container input:focus,
+body #wrapper .signup_signin_container #signin_form .signup_fields .input_container input:focus {
+  outline: solid 1px #00a3ff;
+}
+body #wrapper .signup_signin_container #signup_form .signup_fields .input_container input.error,
+body #wrapper .signup_signin_container #signin_form .signup_fields .input_container input.error {
+  outline: solid 1px #eb5757;
+}
+body #wrapper .signup_signin_container #signup_form .signup_fields label,
+body #wrapper .signup_signin_container #signin_form .signup_fields label {
+  display: block;
+  font-size: 14px;
+}
+body #wrapper .signup_signin_container #signup_form .signup_fields input,
+body #wrapper .signup_signin_container #signin_form .signup_fields input {
+  background-color: #31354f;
+  font: 16px roboto_regular;
+  color: #ffffff;
+  padding: 25px 20px 22px 20px;
+  border-radius: 9px;
+  border: none;
+  margin: 8px 0px 17px 0px;
+  width: 100%;
+}
+body #wrapper .signup_signin_container #signup_form .signup_fields input:focus,
+body #wrapper .signup_signin_container #signin_form .signup_fields input:focus {
+  outline: solid 1px #00a3ff;
+}
+body #wrapper .signup_signin_container #signup_form .signup_fields input.error,
+body #wrapper .signup_signin_container #signin_form .signup_fields input.error {
+  outline: solid 1px #eb5757;
+}
+body #wrapper .signup_signin_container #signup_form .signup_fields #signup_btn,
+body #wrapper .signup_signin_container #signin_form .signup_fields #signup_btn,
+body #wrapper .signup_signin_container #signup_form .signup_fields #signin_btn,
+body #wrapper .signup_signin_container #signin_form .signup_fields #signin_btn {
+  height: 60px;
+  max-width: 515px;
+  color: #ffffff;
+  font: 21px roboto_bold, sans-serif;
+  background-color: #00a3ff;
+  border-radius: 9px;
+  width: 100%;
+  margin: 11px 0px 35px 0px;
+  cursor: pointer;
+  border: none;
+  transition: 0.21s;
+}
+body #wrapper .signup_signin_container #signup_form .signup_fields #signup_btn:hover,
+body #wrapper .signup_signin_container #signin_form .signup_fields #signup_btn:hover,
+body #wrapper .signup_signin_container #signup_form .signup_fields #signin_btn:hover,
+body #wrapper .signup_signin_container #signin_form .signup_fields #signin_btn:hover {
+  background-color: #0050c8;
+}
+body #wrapper .signup_signin_container #signup_form .signup_fields p,
+body #wrapper .signup_signin_container #signin_form .signup_fields p {
+  font-size: 17.5108px;
+  text-align: center;
+}
+body #wrapper .signup_signin_container #signup_form .signup_fields p #login_btn,
+body #wrapper .signup_signin_container #signin_form .signup_fields p #login_btn,
+body #wrapper .signup_signin_container #signup_form .signup_fields p #signup_btn_2,
+body #wrapper .signup_signin_container #signin_form .signup_fields p #signup_btn_2 {
+  font-size: 17.5108px;
+  color: #00a3ff;
+  text-decoration: none;
+  background-color: transparent;
+  padding: 0px;
+  border: none;
+  cursor: pointer;
+  transition: 0.21s;
+}
+body #wrapper .signup_signin_container #signup_form .signup_fields p #login_btn:hover,
+body #wrapper .signup_signin_container #signin_form .signup_fields p #login_btn:hover,
+body #wrapper .signup_signin_container #signup_form .signup_fields p #signup_btn_2:hover,
+body #wrapper .signup_signin_container #signin_form .signup_fields p #signup_btn_2:hover {
+  opacity: 0.8;
+}
+body #wrapper .signup_signin_container #signup_form .signup_fields p #signup_btn_2,
+body #wrapper .signup_signin_container #signin_form .signup_fields p #signup_btn_2 {
+  margin-bottom: 99px;
+}
+body #wrapper .signup_signin_container .splash_side {
+  display: inline-block;
+  vertical-align: top;
+  width: 205px;
+  background-image: url("../../img/background.png");
+  padding: 75px 0px 0px 51px;
+  height: 332.12px;
+  background-size: cover;
+}
+body #wrapper .hide {
+  display: none;
+}
+body #wrapper #dashboard_container header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1E1F25;
+  align-items: center;
+  padding: 0px 26px 0px 25px;
+}
+body #wrapper #dashboard_container header img {
+  width: 138px;
+  height: 28px;
+  background-size: cover;
+}
+body #wrapper #dashboard_container header #user_block #username,
+body #wrapper #dashboard_container header #user_block #logout_container {
+  display: inline-block;
+  vertical-align: top;
+  padding: 22px 0px;
+  color: #ffffff;
+}
+body #wrapper #dashboard_container header #user_block #username {
+  padding-right: 26px;
+  border-right: solid 1px #3A3C46;
+}
+body #wrapper #dashboard_container header #user_block #logout_container #logout_icon {
+  background-image: url("../../img/logout_icon.png");
+  color: #ffffff;
+  background-size: cover;
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  margin: 0px 5px 0px 22px;
+}
+body #wrapper #dashboard_container header #user_block #logout_container span {
+  color: #ffffff;
+}
+@media screen and (max-width: 445px) {
+  body #wrapper #dashboard_container header #user_block #username {
+    display: none;
+  }
+}
+@media screen and (max-width: 445px) {
+  body #wrapper #dashboard_container header #user_block #logout_container {
+    border-left: solid 1px #3A3C46;
+    padding-left: 4px;
+  }
+  body #wrapper #dashboard_container header #user_block #logout_container span {
+    display: none;
+  }
+}
+body #wrapper #dashboard_container #dashboard {
+  max-width: 978px;
+  margin: 0px auto;
+  margin-top: 52px;
+}
+body #wrapper #dashboard_container #dashboard h2 {
+  font: 21px roboto_regular, sans-serif;
+  color: #ffffff;
+}
+body #wrapper #dashboard_container #dashboard p {
+  font: 17.5108px roboto_regular, sans-serif;
+}
+body #wrapper #dashboard_container #dashboard #post_forum {
+  width: 100%;
+  position: relative;
+  margin: 56px 0px 53px 0px;
+}
+body #wrapper #dashboard_container #dashboard #post_forum #post_textarea {
+  border-radius: 10px;
+  width: 100%;
+  height: 80px;
+  background-color: #32333B;
+  outline: none;
+  border: none;
+  overflow: hidden;
+  resize: none;
+  padding: 14px 140px 14px 20px;
+  font-size: 17.5108px;
+}
+body #wrapper #dashboard_container #dashboard #post_forum #post_textarea::placeholder {
+  color: #9496a1;
+  font-size: 17.5108px;
+}
+body #wrapper #dashboard_container #dashboard #post_forum #post_textarea:focus {
+  outline: solid 1px #00a3ff;
+}
+body #wrapper #dashboard_container #dashboard #post_forum #post_textarea.error {
+  outline: solid 1px #eb5757;
+}
+body #wrapper #dashboard_container #dashboard #post_forum #post_btn {
+  height: 38px;
+  width: 100px;
+  color: #ffffff;
+  font: 14px roboto_regular, sans-serif;
+  background-color: #00a3ff;
+  transition: 0.21s;
+  border: none;
+  border-radius: 8.86px;
+  position: absolute;
+  bottom: 21px;
+  right: 20px;
+  box-sizing: border-box;
+}
+body #wrapper #dashboard_container #dashboard #post_forum #post_btn:hover {
+  background-color: #0050C8;
+}
+body #wrapper #dashboard_container #dashboard #recent_forums {
+  display: block;
+  margin-bottom: 26px;
+}
+body #wrapper #dashboard_container #dashboard .forum_style {
+  list-style: none;
+}
+body #wrapper #dashboard_container #dashboard .forum_style #empty_post {
+  text-align: center;
+  color: #6D6E75;
+  border: 1px dashed #6D6E75;
+  width: 100%;
+  font: 16px roboto_regular, sans-serif;
+  padding: 34px 0px;
+  border-radius: 9px;
+}
+body #wrapper #dashboard_container #dashboard .forum_style #empty_post.hide {
+  display: none;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items {
+  background-color: #1e1f25;
+  border-radius: 10px;
+  padding: 28px 30px 30px 30px;
+  margin-bottom: 30px;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items.clone_forum {
+  display: none;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .forum_content {
+  font: 16px roboto_italic, sans-serif;
+  color: #ffffff;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .forum_content.hide {
+  display: none;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .edit_forum {
+  position: relative;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .edit_forum.hide {
+  display: none;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .edit_forum.hide {
+  display: none;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .edit_forum #edit_forum_textarea {
+  height: 80px;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #3A3C46;
+  border: none;
+  resize: none;
+  overflow: hidden;
+  padding: 15px 140px 15px 20px;
+  font-size: 16px;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .edit_forum #edit_forum_textarea:focus {
+  outline: solid 1px #00a3ff;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .edit_forum #edit_forum_textarea.error {
+  outline: solid 1px #eb5757;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .edit_forum #save_btn {
+  width: 100px;
+  height: 38px;
+  background-color: #00a3ff;
+  transition: 0.21s;
+  border-radius: 8.86px;
+  border: none;
+  color: #ffffff;
+  font: 14px roboto_bold, sans-serif;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .edit_forum #save_btn:hover {
+  background-color: #0050c8;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .forum_details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 7px 0px 26px 0px;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .forum_details .author_details span {
+  color: #A3A3FF;
+  font: 14px roboto_regular, sans-serif;
+  display: inline-block;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .forum_details .author_details span:nth-child(2) {
+  border-right: solid 1px #A3A3FF;
+  padding-right: 15px;
+  margin-right: 13px;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .forum_details .buttons #forum_edit_btn,
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .forum_details .buttons #forum_delete_btn {
+  background-color: #32333C;
+  width: 29px;
+  height: 29px;
+  border: solid 1px #606066;
+  border-radius: 4px;
+  transition: 0.21s;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .forum_details .buttons #forum_edit_btn:hover,
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .forum_details .buttons #forum_delete_btn:hover {
+  background-color: #ffffff;
+  border: solid 1px #ffffff;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .forum_details .buttons #forum_edit_btn .edit_icon,
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .forum_details .buttons #forum_delete_btn .edit_icon {
+  display: inline-block;
+  background-image: url("../../img/edit_icon.png");
+  background-size: cover;
+  width: 12px;
+  height: 12px;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .forum_details .buttons #forum_edit_btn .delete_icon,
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .forum_details .buttons #forum_delete_btn .delete_icon {
+  display: inline-block;
+  background-image: url("../../img/delete_icon.png");
+  background-size: cover;
+  width: 10px;
+  height: 12px;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container {
+  margin-left: 16px;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .comment_textarea_container {
+  position: relative;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .comment_textarea_container #comment_textarea {
+  height: 80px;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #3A3C46;
+  border: none;
+  resize: none;
+  overflow: hidden;
+  padding: 15px 140px 15px 20px;
+  font-size: 16px;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .comment_textarea_container #comment_textarea:focus {
+  outline: solid 1px #00a3ff;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .comment_textarea_container #comment_textarea.error {
+  outline: solid 1px #eb5757;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .comment_textarea_container #comment_btn {
+  width: 100px;
+  height: 38px;
+  background-color: #00a3ff;
+  transition: 0.21s;
+  border-radius: 8.86px;
+  border: none;
+  color: #ffffff;
+  font: 14px roboto_bold, sans-serif;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .comment_textarea_container #comment_btn:hover {
+  background-color: #0050c8;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .post_comment {
+  margin: 23px 0px;
+  border-bottom: solid 1px #3F404A;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .post_comment.hide {
+  display: none;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .post_comment .comment_content {
+  font: 16px roboto_italic, sans-serif;
+  color: #9496a1;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .post_comment .comment_content.hide {
+  display: none;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .post_comment .edit_comment {
+  position: relative;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .post_comment .edit_comment.hide {
+  display: none;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .post_comment .edit_comment #edit_comment_textarea {
+  height: 80px;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #3A3C46;
+  border: none;
+  resize: none;
+  overflow: hidden;
+  padding: 15px 140px 15px 20px;
+  font-size: 16px;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .post_comment .edit_comment #edit_comment_textarea:focus {
+  outline: solid 1px #00a3ff;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .post_comment .edit_comment #edit_comment_textarea.error {
+  outline: solid 1px #eb5757;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .post_comment .edit_comment #edit_comment_textarea.hide {
+  display: none;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .post_comment .edit_comment .error {
+  outline: solid 1px #eb5757;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .post_comment .edit_comment #save_comment_btn {
+  width: 100px;
+  height: 38px;
+  background-color: #00a3ff;
+  transition: 0.21s;
+  border-radius: 8.86px;
+  border: none;
+  color: #ffffff;
+  font: 14px roboto_bold, sans-serif;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .post_comment .edit_comment #save_comment_btn:hover {
+  background-color: #0050c8;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .post_comment .comment_details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 7px 0px 26px 0px;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .post_comment .comment_details .author_details span {
+  color: #A3A3FF !important;
+  font: 14px roboto_regular, sans-serif;
+  display: inline-block;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .post_comment .comment_details .author_details span:nth-child(2) {
+  padding-right: 15px;
+  margin-right: 13px;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .post_comment .comment_details .buttons #comment_edit_btn,
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .post_comment .comment_details .buttons #comment_delete_btn {
+  background-color: #32333C;
+  width: 29px;
+  height: 29px;
+  border: solid 1px #606066;
+  border-radius: 4px;
+  transition: 0.21s;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .post_comment .comment_details .buttons #comment_edit_btn:hover,
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .post_comment .comment_details .buttons #comment_delete_btn:hover {
+  background-color: #ffffff;
+  border: solid 1px #ffffff;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .post_comment .comment_details .buttons #comment_edit_btn .edit_icon,
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .post_comment .comment_details .buttons #comment_delete_btn .edit_icon {
+  display: inline-block;
+  background-image: url("../../img/edit_icon.png");
+  background-size: cover;
+  width: 12px;
+  height: 12px;
+}
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .post_comment .comment_details .buttons #comment_edit_btn .delete_icon,
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .post_comment .comment_details .buttons #comment_delete_btn .delete_icon {
+  display: inline-block;
+  background-image: url("../../img/delete_icon.png");
+  background-size: cover;
+  width: 10px;
+  height: 12px;
+}
+@media screen and (max-width: 1035px) {
+  body #wrapper #dashboard_container #dashboard {
+    max-width: 100%;
+    padding: 0px 26px;
+  }
+}
+@media screen and (max-width: 530px) {
+  body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .comment_textarea_container #comment_textarea {
+    height: 174px;
+    padding: 15px 20px 60px 20px !important;
+  }
+  body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .post_comment .edit_comment #edit_comment_textarea {
+    height: 174px;
+    padding: 15px 20px 60px 20px !important;
+  }
+  body #wrapper #dashboard_container #dashboard .forum_style .forum_items .edit_forum #edit_forum_textarea {
+    height: 174px !important;
+    padding: 15px 20px 60px 20px !important;
+  }
+  body #wrapper #dashboard_container #dashboard .forum_style .forum_items .forum_details .edit_forum #edit_forum_textarea {
+    height: 174px !important;
+    padding: 15px 20px 60px 20px !important;
+  }
+  body #wrapper #dashboard_container #dashboard .forum_style .forum_items .forum_details .author_details span:nth-child(2) {
+    border: none;
+    display: none;
+  }
+  body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .post_comment .comment_details span:nth-child(2) {
+    border: none;
+    display: none;
+  }
+  body #wrapper #dashboard_container #dashboard #post_forum #post_textarea {
+    height: 174px;
+    padding: 14px 20px 62px 20px !important;
+  }
+}
+@media screen and (max-width: 375px) {
+  body #wrapper #dashboard_container #dashboard .forum_style .forum_items .forum_details .author_details span:nth-child(1) {
+    display: block;
+  }
+  body #wrapper #dashboard_container #dashboard .forum_style .forum_items .forum_details .author_details span:nth-child(3) {
+    display: block;
+  }
+  body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .post_comment .comment_details span:nth-child(1) {
+    display: block;
+  }
+  body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .post_comment .comment_details span:nth-child(3) {
+    display: block;
+  }
+}
