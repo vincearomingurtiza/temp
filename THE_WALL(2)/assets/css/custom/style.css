@@ -427,7 +427,7 @@ body #wrapper #dashboard_container #dashboard .forum_style .forum_items .forum_d
 body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container {
   margin-left: 16px;
 }
-body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container #posted_comment .post_comment.hide {
+body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .posted_comment .post_comment.hide {
   display: none;
 }
 body #wrapper #dashboard_container #dashboard .forum_style .forum_items .comment_container .comment_textarea_container {

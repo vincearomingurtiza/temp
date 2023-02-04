@@ -105,7 +105,7 @@ function postComment(){
     let post_comment_clone = comment_container.querySelector(".post_comment_clone");
     let cloned_comment = post_comment_clone.cloneNode(true);
     let comment_textarea = comment_container.querySelector("#comment_textarea");
-    let posted_comment = comment_container.querySelector("#posted_comment");
+    let posted_comment = comment_container.querySelector(".posted_comment");
 
     if (comment_textarea.value.length != 0){
         cloned_comment.setAttribute("class", "post_comment");
@@ -134,6 +134,7 @@ function postComment(){
         comment_delete_btns.forEach(function(active_delete_btn){
             active_delete_btn.addEventListener("click", deleteComment);
         });
+
     } else{
         comment_textarea.classList.add("error");
     }
