@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Wall Forum Dashboard">
+    <title>The Wall</title>
+    <link rel="stylesheet" href="./assets/css/custom/style.css">
+    <script src="./assets/js/custom/script.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="signup_container" class="signup_signin_container hide">
+            <form action="#" id="signup_form" method="GET">
+                <h2>Welcome,</h2>
+                <h3>Register a new account.</h3>
+                <div class="signup_fields">
+                    <div class="input_container">
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" class="signup_input">
+                    </div>
+                    <div class="input_container">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" id="lastname" class="signup_input">
+                    </div>
+                    <label for="signup_email">Email</label>
+                    <input type="text" id="signup_email" class="signup_input">
+                    <label for="signup_password">Password</label>
+                    <input type="password" id="signup_password" class="signup_input">
+                    <button type="submit" id="signup_btn">Sign Up</button>
+                    <p>Already have an account? <button type="button" id="login_btn">Login</button></p>
+                </div>
+            </form>
+            <div class="splash_side">
+                <img src="./assets/img/the-wall-logo.png" alt="The Wall Logo">
+            </div>
+        </div>
+        <div id="signin_container" class="signup_signin_container hide">
+            <form action="#" id="signin_form">
+                <h2>Welcome,</h2>
+                <h3>Login your account.</h3>
+                <div class="signup_fields">
+                    <label for="signin_email">Email</label>
+                    <input type="text" id="signin_email" class="signin_input">
+                    <label for="sigin_password">Password</label>
+                    <input type="password" id="sigin_password" class="signin_input">
+                    <button type="submit" id="signin_btn">Sign In</button>
+                    <p>Already have an account? <button type="button" id="signup_btn_2">Sign Up</button></p>
+                </div>
+            </form>
+            <div class="splash_side">
+                <img src="./assets/img/the-wall-logo.png" alt="The Wall Logo">
+            </div>
+        </div>
+        <div id="dashboard_container" class="">
+            <header>
+                <img src="./assets/img/header-the-wall-logo.png" alt="The Wall Logo">
+                <div id="user_block">
+                    <span id="username">Vince Gurtiza</span>
+                    <div id="logout_container">
+                        <span id="logout_icon"></span>
+                        <span>Logout</span>
+                    </div>
+                </div>
+            </header>
+            <section id="dashboard">
+                <h2>Hello Vince,</h2>
+                <p>Welcome to V88 Forum Dashboard</p>
+                <form id="post_forum">
+                    <textarea id="post_textarea" placeholder="Post your Topic..."></textarea>
+                    <button type="submit" id="post_btn">Post</button>
+                </form>
+                <span id="recent_forums">Recent Forums</span>
+                <ul id="posted_forum" class="forum_style"></ul>
+                <ul id="forum_list" class="forum_style">
+                    <li id="empty_post">No post yet.</li>
+                    <li class="forum_items clone_forum">
+                        <p class="forum_content">MMMMMMMMMMMM</p>
+                            <div class="edit_forum">
+                            <textarea id="edit_forum_textarea" placeholder="Post your topic..."></textarea>
+                            <button type="submit" id="save_btn">Save</button>
+                        </div>
+                        <div class="forum_details">
+                            <div class="author_details">
+                                <span>Vince Gurtiza</span>
+                                <span>(few seconds ago)</span>
+                                <span class="number_of_response">0 Responses</span>
+                            </div>
+                            <div class="buttons">
+                                <button type="button" id="forum_edit_btn"><span class="edit_icon"></span></button>
+                                <button type="button" id="forum_delete_btn"><span class="delete_icon"></span></button>
+                            </div>
+                        </div>
+                        <div class="comment_container">
+                            <div class="comment_textarea_container">
+                                <textarea id="comment_textarea" placeholder="Post your topic..."></textarea>
+                                <button type="submit" id="comment_btn">Comment</button>
+                            </div>
+                            <!-- Clone Comment Here -->
+                            <div id="posted_comment"></div>
+                            <div class="post_comment hide">
+                                <p class="comment_content"></p>
+                                <div class="edit_comment">
+                                    <textarea id="edit_comment_textarea" placeholder="Post your topic..."></textarea>
+                                    <button type="submit" id="save_comment_btn">Save</button>
+                                </div>
+                                <div class="comment_details">
+                                    <div class="author_details">
+                                        <span>Vince Gurtiza</span>
+                                        <span>(few seconds ago)</span>
+                                    </div>
+                                    <div class="buttons">
+                                        <button type="button" id="comment_edit_btn"><span class="edit_icon"></span></button>
+                                        <button type="button" id="comment_delete_btn"><span class="delete_icon"></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

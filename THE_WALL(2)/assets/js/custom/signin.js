@@ -1,12 +1,12 @@
-console.log("I'm SIGNUP!");
+console.log("I'm SIGNIN!");
 document.addEventListener("DOMContentLoaded", function(){
-    let signup_form = document.querySelector("#signup_form");
-    signup_form.addEventListener("submit", signupValidation);
+    let signin_form = document.querySelector("#signin_form");
+    signin_form.addEventListener("click", signinValidation);
 });
 
-function signupValidation(e){
+function signinValidation(e){
     e.preventDefault();
-    let inputs = document.querySelectorAll(".signup_input");
+    let inputs = document.querySelectorAll(".signin_input");
     inputs.forEach(function(){
         for(let element = 0; element < inputs.length; element++){
             if (inputs[element].value.length == 0){
